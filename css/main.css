@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a75c5;
+  color: #fff;
+  font-family: "Cairo", sans-serif;
+  width: 90%;
+  margin-left: 5%;
+}
+img {
+  margin: 10px auto;
+  display: block;
+  width: 150px;
+}
+/* Start Game */
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 800px;
+  height: 500px;
+  margin: 50px auto;
+  gap: 30px;
+}
+.game .col {
+  background-color: #aadd34;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #7baf00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-size: 50px;
+  transition: 0.3s;
+  width: 235px;
+  height: 235px;
+}
+.game .col.zero {
+  color: #aadd34;
+}
+.game .col.clicked {
+  background-color: #49c764;
+}
+/* End Game */
